@@ -1,0 +1,84 @@
+{
+  "recipes": [
+    {
+      "id": 1,
+      "name": "Barbeque Chicken",
+      "category": "Poultry",
+      "synopsis": "Chicken slow cooked on the grill and poured with barbeque sauce",
+      "author": "tgoandrex",
+      "imagePath": "img/BBQChicken.jpg",
+      "level": 3,
+      "instructions": [
+        "Remove unthawed chicken from package, season if desired",
+        "Place chicken on grill and cook for 40 minutes, cook for longer if blood is present inside",
+        "Pour barbeque sauce on grilled chicken and cool for 5 minutes",
+        "Eat and enjoy"
+      ],
+      "prepTime": 10,
+      "cookTime": 40,
+      "yield": "6 thighs or 12 drumsticks",
+      "ingredients": [
+        "Chicken (thighs or drumsticks)",
+        "Barbeque sauce",
+        "Seasoning of your choice (Optional)"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Spaghetti",
+      "category": "Pasta",
+      "synopsis": "Spaghetti covered in sauce and meatballs",
+      "author": "pastaguy",
+      "imagePath": "img/Spaghetti.jpg",
+      "level": 5,
+      "instructions": [
+        "Pour sauce and seasonings into large container and mix",
+        "Remove unthawed meatballs in package and cook in oven for 10-15 minutes at 350 degrees",
+        "Remove meatballs and place in sauce container, cook on stove on low-medium setting for 50 minutes, check and stir occasionally",
+        "Remove noodles from package and cook on stove on high for 20 minutes. Recommend starting this 20 minutes before sauce is finished for best results",
+        "Allow both sauce and noodles to cool for 5 minutes",
+        "Eat and enjoy, add parmesan cheese to dish if desired"
+      ],
+      "prepTime": 20,
+      "cookTime": 50,
+      "yield": "4-6 servings",
+      "ingredients": [
+        "Tomato sauce",
+        "Seasoning",
+        "Meatballs",
+        "Noodles",
+        "Parmesan cheese (Optional)"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Pancakes",
+      "category": "Breakfast",
+      "synopsis": "Homemade pancakes cooked until golden brown, with maple syrup",
+      "author": "xxRecipeFanxx",
+      "imagePath": "img/Pancakes.jpg",
+      "level": 3,
+      "instructions": [
+        "Get a cup of flour, 2 tablespoons of sugar and baking powder, and 1 teaspoon of salt. Mix thoroughly in a bowl for 2 minutes",
+        "Pour 1 cup of milk, 1 beaten egg, and 2 tablespoons of cooking oil into the mix and mix a second time for 3 minutes until smooth",
+        "Heat a lightly oiled frying pan on a stove at medium-high and pour a quarter of the pancake mix, cook until both sides are golden brown",
+        "Repeat the previous step 3 more times for the rest of the mix",
+        "Wait until all are cooled for 5 minutes, pour maple syrup if desired",
+        "Eat and enjoy"
+      ],
+      "prepTime": 5,
+      "cookTime": 10,
+      "yield": "4 medium sized pancakes",
+      "ingredients": [
+        "Flour",
+        "Sugar",
+        "Baking powder",
+        "Salt",
+        "Milk",
+        "Egg",
+        "Cooking oil",
+        "Maple syrup (Optional)"
+      ]
+    }
+  ]
+}

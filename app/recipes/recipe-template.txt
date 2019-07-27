@@ -1,0 +1,24 @@
+	{
+	  "id": 0,
+	  "name": "",
+	  "category": "",
+	  "synopsis": "",
+	  "author": "",
+	  "imagePath": "", (img/image.jpg)
+	  "level": 0, (Represents difficulty from 1-10)
+	  "instructions": [
+		"",
+		"",
+		"",
+		""
+	  ],
+	  "prepTime": 0, (In minutes)
+	  "cookTime": 0, (In minutes from 1-59)
+	  "yield": "",
+	  "ingredients": [
+		"",
+		"",
+		"",
+		""
+	  ]
+	}

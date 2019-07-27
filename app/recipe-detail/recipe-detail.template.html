@@ -1,0 +1,29 @@
+<div class="col-md-6 col-centered">
+	<div class="card">
+		<img class="card-img-top" ng-src="{{recipe.imagePath}}" alt="{{recipe.name}} image">
+		<div class="card-header">
+			<div class="card-title h3">{{recipe.name}}</div>
+		</div>
+		<div class="card-body">
+			<p>
+				Preparation Time Estimate: {{recipe.prepTime}} minutes. Cook Time Estimate: {{recipe.cookTime}} minutes. 
+				Estimated Yield: {{recipe.yield}}.
+			</p>
+		</div> 
+		<h5>Ingredients: </h5>
+		<ul class="list-group list-group-flush">
+			<li ng-repeat="x in recipe.ingredients" class="list-group-item">{{x}}</li>
+		</ul>
+		<h5>Instructions:</h5>
+		<small class="text-muted">When a step is completed, click on the step in order to track your progress</small>
+		<ul class="list-group list-group-flush">
+			<li ng-repeat="x in recipe.instructions" class="list-group-item" ng-click="completeStep(this)" ng-class="{'list-group-item-success' : completed}">{{x}}</li>
+		</ul>
+		<h3><span ng-bind="minute"></span>:<span ng-bind="second"></span></h3>
+		<div class="form-check">
+			<input class="form-check-input" type="checkbox" id="sound" ng-model="check" ng-checked="detectCheckBox(check)">
+			<label class="form-check-label" for="sound">Enable audible beep when timer ends</label>
+		</div>
+		<input type="button" class="btn btn-dark" ng-click="runTimer()" onclick="this.disabled = true" value="Start Timer">
+	</div>
+</div>

@@ -1,0 +1,33 @@
+<div class="col-6 col-centered">
+	<div class="form-group">
+		<label for="search-bar">Search Recipes:</label>
+		<input type="text" class="form-control" id="search-bar" ng-model="query" placeholder="Search" aria-label="Search Recipes">
+	</div>
+	<div class="form-group">
+		<label for="sort">Sort By:</label>
+		<select class="form-control" id="sort" ng-model="orderProp">
+			<option value="name">Recipe Name (A-Z)</option>
+			<option value="-name">Recipe Name (Z-A)</option>
+			<option value="author">Author (A-Z)</option>
+			<option value="-author">Author (Z-A)</option>
+			<option value="level">Difficulty Level (Low-High)</option>
+			<option value="-level">Difficulty Level (High-Low)</option>
+		</select>
+	</div>
+</div>
+<div ng-repeat="recipe in recipes | filter:query | orderBy:orderProp">
+	<div class="col-md-4 col-centered">
+		<div class="card">
+			<div class="card-header">
+				<img class="card-img-top img-thumbnail" ng-src="{{recipe.imagePath}}" alt="{{recipe.name}} image" style="max-height: 150px; max-width: 150px;">
+				<div class="card-title h3">{{recipe.name}}</div>
+				{{recipe.synopsis}}
+			</div>
+			<div class="card-body">
+				<p>Created by: {{recipe.author}}</p>
+				<p>Difficulty Level: {{recipe.level}}</p>
+				<a href="#!/recipes/{{recipe.id}}">Start Cooking!</a>
+			</div>
+		</div>
+	</div>
+</div>

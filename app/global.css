@@ -1,0 +1,12 @@
+.row-centered {
+   text-align: center;
+}
+
+.col-centered {
+  display:inline-block;
+  float:none;
+}
+
+.card {
+	margin: 1.5em;
+}
